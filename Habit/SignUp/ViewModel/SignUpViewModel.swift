@@ -42,20 +42,47 @@ class SignUpViewModel: ObservableObject {
     formatter.dateFormat = "yyyy-MM-dd"
     let birthday = formatter.string(from: dateFormatted)
     
-    
+    // Main Thread
     WebService.postUser(request: SignUpRequest(fullName: fullName,
                                                email: email,
                                                password: password,
                                                document: document,
                                                phone: phone,
                                                birthday: birthday,
-                                               gender: gender.index))
+                                               gender: gender.index)) { (successResponse, errorResponse) in
+      // Non Main Thread
+      if let error = errorResponse {
+        DispatchQueue.main.async {
+          // Main Thread
+          self.uiState = .error(error.detail)
+        }
+      }
+      
+      if let success = successResponse {
+        WebService.login(request: SignInRequest(email: self.email,
+                                                password: self.password)) { (successResponse, errorResponse) in
+          
+          if let errorSignIn = errorResponse {
+            DispatchQueue.main.async {
+              // Main Thread
+              self.uiState = .error(errorSignIn.detail.message)
+            }
+          }
+          
+          if let successSignIn = successResponse {
+            DispatchQueue.main.async {
+              print(successSignIn)
+              self.publisher.send(success)
+              self.uiState = .success
+            }
+          }
+          
+        }
+        
+      }
+      
+    }
     
-//    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//      self.uiState = .error("Usuário já existente!")
-//      self.uiState = .success
-//      self.publisher.send(true)
-//    }
   }
   
 }
