@@ -69,7 +69,7 @@ struct SignInView: View {
           .navigationBarTitle("Login", displayMode: .inline)
           .navigationBarHidden(navigationHidden)
         }
-        .onAppear {
+        .onAppear {          
           self.navigationHidden = true
         }
         .onDisappear {
@@ -139,7 +139,7 @@ extension SignInView {
 struct SignInView_Previews: PreviewProvider {
   static var previews: some View {
     ForEach(ColorScheme.allCases, id: \.self) {
-      let viewModel = SignInViewModel()
+      let viewModel = SignInViewModel(interactor: SignInInteractor())
       SignInView(viewModel: viewModel)
         .previewDevice("iPhone 11")
         .preferredColorScheme($0)
