@@ -47,7 +47,7 @@ struct SignInView: View {
                 
                 registerLink
                 
-                Text("Copyright - AT Digital LTDA 2019")
+                Text("Copyright - Dev Maicon Mota 2022")
                   .foregroundColor(Color.gray)
                   .font(Font.system(size: 13).bold())
                   .padding(.top, 16)
