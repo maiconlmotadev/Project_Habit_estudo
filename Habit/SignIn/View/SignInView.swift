@@ -49,6 +49,7 @@ struct SignInView: View {
                 
                 Text("Copyright - Dev Maicon Mota 2022")
                   .foregroundColor(Color.gray)
+                  
                   .font(Font.system(size: 13).bold())
                   .padding(.top, 16)
               }
