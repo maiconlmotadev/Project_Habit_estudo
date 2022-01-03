@@ -17,11 +17,21 @@ class HabitViewModel: ObservableObject {
   @Published var headline = ""
   @Published var desc = ""
   
+  @Published var opened = false
+  
   private var cancellableRequest: AnyCancellable?
+  private var cancellableNotify: AnyCancellable?
   private let interactor: HabitInteractor
+  
+  private let habitPublisher = PassthroughSubject<Bool, Never>()
   
   init(interactor: HabitInteractor) {
     self.interactor = interactor
+    
+    cancellableNotify = habitPublisher.sink(receiveValue: { saved in
+      print("saved: \(saved)")
+      self.onAppear()
+    })
   }
   
   deinit {
@@ -29,6 +39,7 @@ class HabitViewModel: ObservableObject {
   }
   
   func onAppear() {
+    self.opened = true
     self.uiState = .loading
     
     cancellableRequest = interactor.fetchHabits()
@@ -60,7 +71,8 @@ class HabitViewModel: ObservableObject {
               self.headline = "Seus hábitos estão em dia"
               self.desc = ""
               
-              if lastDate < Date().toString(destPattern: "dd/MM/yyyy") {
+              let dateToCompare = $0.lastDate?.toDate(sourcePattern: "yyyy-MM-dd'T'HH:mm:ss") ?? Date()
+              if dateToCompare < Date() {
                 state = .red
                 self.title = "Atenção"
                 self.headline = "Fique ligado!"
@@ -74,7 +86,8 @@ class HabitViewModel: ObservableObject {
                                         name: $0.name,
                                         label: $0.label,
                                         value: "\($0.value ?? 0)",
-                                        state: state)
+                                        state: state,
+                                        habitPublisher: self.habitPublisher)
               
             }
           )
@@ -83,5 +96,6 @@ class HabitViewModel: ObservableObject {
       })
       
     }
+  
   
 }

@@ -72,7 +72,9 @@ struct HabitView: View {
       }
 
     }.onAppear {
-      viewModel.onAppear()
+      if !viewModel.opened {
+        viewModel.onAppear()
+      }
     }
   }
 }
@@ -128,7 +130,7 @@ extension HabitView {
 struct HabitView_Previews: PreviewProvider {
   static var previews: some View {
     ForEach(ColorScheme.allCases, id: \.self) {
-      HomeViewRouter.makeHabitView()
+      HomeViewRouter.makeHabitView(viewModel: HabitViewModel(interactor: HabitInteractor()))
         .previewDevice("iPhone 11")
         .preferredColorScheme($0)
     }

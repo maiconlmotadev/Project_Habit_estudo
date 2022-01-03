@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HabitCardView: View {
   
@@ -17,7 +18,7 @@ struct HabitCardView: View {
     ZStack(alignment: .trailing) {
       
       NavigationLink(
-        destination: Text("Destination"),
+        destination: viewModel.habitDetailView(),
         isActive: self.$action,
         label: {
           EmptyView()
@@ -30,8 +31,10 @@ struct HabitCardView: View {
         
         HStack {
           
-          Image(systemName: "pencil")
-            .padding(.horizontal, 8)
+          ImageView(url: viewModel.icon)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 32, height: 32)
+            .clipped()            
           
           Spacer()
           
@@ -108,7 +111,7 @@ struct HabitCardView_Previews: PreviewProvider {
                                                       name: "Tocar guitarra",
                                                       label: "horas",
                                                       value: "2",
-                                                      state: .green))
+                                                      state: .green, habitPublisher: PassthroughSubject<Bool, Never>()))
           
           HabitCardView(viewModel: HabitCardViewModel(id: 1,
                                                       icon: "https://via.placeholder.com/150",
@@ -116,7 +119,8 @@ struct HabitCardView_Previews: PreviewProvider {
                                                       name: "Tocar guitarra",
                                                       label: "horas",
                                                       value: "2",
-                                                      state: .green))
+                                                      state: .green,
+                                                      habitPublisher: PassthroughSubject<Bool, Never>()))
         }.frame(maxWidth: .infinity)
         .navigationTitle("Teste")
         
