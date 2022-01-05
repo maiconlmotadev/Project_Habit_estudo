@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059711942287A773146F49AC /* Pods_Habit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A518949621BF6A406D647A3E /* Pods_Habit.framework */; };
 		9C156D4C264EEEA6009F2D79 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C156D4B264EEEA6009F2D79 /* WebService.swift */; };
 		9C177C1E267CBD4800B258D4 /* HabitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C177C1D267CBD4800B258D4 /* HabitResponse.swift */; };
 		9C177C21267CBE3F00B258D4 /* HabitRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C177C20267CBE3F00B258D4 /* HabitRemoteDataSource.swift */; };
@@ -59,6 +60,7 @@
 		9C97E67A2645BA5200B1B35F /* SignUpUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97E6792645BA5200B1B35F /* SignUpUIState.swift */; };
 		9C97E67C2645BA9900B1B35F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97E67B2645BA9900B1B35F /* SignUpViewModel.swift */; };
 		9C97E67E2645BAEF00B1B35F /* SignUpViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97E67D2645BAEF00B1B35F /* SignUpViewRouter.swift */; };
+		9CA0FF07269CC4A800C2AC92 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0FF06269CC4A800C2AC92 /* ChartView.swift */; };
 		9CB7A1082640A73B001C597D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A1072640A73B001C597D /* SignInView.swift */; };
 		9CB7A10A2640A772001C597D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A1092640A772001C597D /* SignInViewModel.swift */; };
 		9CB7A10C2640A828001C597D /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A10B2640A828001C597D /* SplashViewRouter.swift */; };
@@ -66,16 +68,24 @@
 		9CBFDE622680E42300C8F9B2 /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFDE612680E42300C8F9B2 /* HabitDetailViewModel.swift */; };
 		9CBFDE642680E48B00C8F9B2 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFDE632680E48B00C8F9B2 /* HabitDetailView.swift */; };
 		9CBFDE662680E93000C8F9B2 /* HabitCardViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFDE652680E93000C8F9B2 /* HabitCardViewRouter.swift */; };
+		9CC2450E269F278A006F862C /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2450D269F278A006F862C /* ChartViewModel.swift */; };
+		9CC24510269F2826006F862C /* BoxChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2450F269F2826006F862C /* BoxChartView.swift */; };
 		9CC4E7AC2628A5DF00FD1598 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4E7AB2628A5DF00FD1598 /* SplashViewModel.swift */; };
 		9CC7F966269389750023AF18 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7F965269389750023AF18 /* ProfileView.swift */; };
 		9CCEEB9526938D4B0065AA44 /* GenderSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEEB9426938D4B0065AA44 /* GenderSelectorView.swift */; };
 		9CE0D93F2641F31000E56C2C /* SignInUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0D93E2641F31000E56C2C /* SignInUIState.swift */; };
 		9CE17F122649CDEF002B4071 /* EditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE17F112649CDEF002B4071 /* EditTextView.swift */; };
 		9CE17F152649D268002B4071 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE17F142649D268002B4071 /* CustomTextFieldStyle.swift */; };
+		9CE4766E26A089CF00E99B80 /* HabitValueResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4766D26A089CF00E99B80 /* HabitValueResponse.swift */; };
+		9CE4767126A08A3000E99B80 /* ChartRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767026A08A3000E99B80 /* ChartRemoteDataSource.swift */; };
+		9CE4767326A08B0200E99B80 /* ChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767226A08B0200E99B80 /* ChartInteractor.swift */; };
+		9CE4767526A08B4D00E99B80 /* ChartUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767426A08B4D00E99B80 /* ChartUIState.swift */; };
 		9CEAEC21268FBA6B001DD463 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEAEC20268FBA6B001DD463 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792AB339737D2BD60713CF5D /* Pods-Habit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit.debug.xcconfig"; path = "Target Support Files/Pods-Habit/Pods-Habit.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0588BACC6D9336CC7DAABA /* Pods-Habit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit.release.xcconfig"; path = "Target Support Files/Pods-Habit/Pods-Habit.release.xcconfig"; sourceTree = "<group>"; };
 		9C156D4B264EEEA6009F2D79 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		9C177C1D267CBD4800B258D4 /* HabitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitResponse.swift; sourceTree = "<group>"; };
 		9C177C20267CBE3F00B258D4 /* HabitRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -130,6 +140,7 @@
 		9C97E6792645BA5200B1B35F /* SignUpUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUIState.swift; sourceTree = "<group>"; };
 		9C97E67B2645BA9900B1B35F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		9C97E67D2645BAEF00B1B35F /* SignUpViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewRouter.swift; sourceTree = "<group>"; };
+		9CA0FF06269CC4A800C2AC92 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		9CB7A1072640A73B001C597D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		9CB7A1092640A772001C597D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		9CB7A10B2640A828001C597D /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
@@ -137,13 +148,20 @@
 		9CBFDE612680E42300C8F9B2 /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		9CBFDE632680E48B00C8F9B2 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 		9CBFDE652680E93000C8F9B2 /* HabitCardViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardViewRouter.swift; sourceTree = "<group>"; };
+		9CC2450D269F278A006F862C /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		9CC2450F269F2826006F862C /* BoxChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxChartView.swift; sourceTree = "<group>"; };
 		9CC4E7AB2628A5DF00FD1598 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		9CC7F965269389750023AF18 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9CCEEB9426938D4B0065AA44 /* GenderSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectorView.swift; sourceTree = "<group>"; };
 		9CE0D93E2641F31000E56C2C /* SignInUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUIState.swift; sourceTree = "<group>"; };
 		9CE17F112649CDEF002B4071 /* EditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextView.swift; sourceTree = "<group>"; };
 		9CE17F142649D268002B4071 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		9CE4766D26A089CF00E99B80 /* HabitValueResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitValueResponse.swift; sourceTree = "<group>"; };
+		9CE4767026A08A3000E99B80 /* ChartRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartRemoteDataSource.swift; sourceTree = "<group>"; };
+		9CE4767226A08B0200E99B80 /* ChartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInteractor.swift; sourceTree = "<group>"; };
+		9CE4767426A08B4D00E99B80 /* ChartUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIState.swift; sourceTree = "<group>"; };
 		9CEAEC20268FBA6B001DD463 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A518949621BF6A406D647A3E /* Pods_Habit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,12 +169,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059711942287A773146F49AC /* Pods_Habit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CAA803043A0D1246659BA77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				792AB339737D2BD60713CF5D /* Pods-Habit.debug.xcconfig */,
+				9A0588BACC6D9336CC7DAABA /* Pods-Habit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9C156D4A264EEE88009F2D79 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +234,8 @@
 			children = (
 				9C5A478E261F9F1B0064A309 /* Habit */,
 				9C5A478D261F9F1B0064A309 /* Products */,
+				5CAA803043A0D1246659BA77 /* Pods */,
+				D0BDC4D38201AED0F1CBEDBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +250,7 @@
 		9C5A478E261F9F1B0064A309 /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0FF02269CC49100C2AC92 /* Charts */,
 				9CC7F961269389580023AF18 /* Profile */,
 				9CBFDE5B2680E3B100C8F9B2 /* HabitDetail */,
 				9C7ECE28267107FA00B3A106 /* Habit */,
@@ -441,6 +472,43 @@
 			path = Lang;
 			sourceTree = "<group>";
 		};
+		9CA0FF02269CC49100C2AC92 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				9CE4766F26A08A2200E99B80 /* Interactor */,
+				9CA0FF05269CC49E00C2AC92 /* View */,
+				9CA0FF04269CC49900C2AC92 /* ViewModel */,
+				9CA0FF03269CC49600C2AC92 /* Model */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		9CA0FF03269CC49600C2AC92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CE4766D26A089CF00E99B80 /* HabitValueResponse.swift */,
+				9CE4767426A08B4D00E99B80 /* ChartUIState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA0FF04269CC49900C2AC92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CC2450D269F278A006F862C /* ChartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CA0FF05269CC49E00C2AC92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0FF06269CC4A800C2AC92 /* ChartView.swift */,
+				9CC2450F269F2826006F862C /* BoxChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9CB7A1022640A6F8001C597D /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +651,23 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		9CE4766F26A08A2200E99B80 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9CE4767026A08A3000E99B80 /* ChartRemoteDataSource.swift */,
+				9CE4767226A08B0200E99B80 /* ChartInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0BDC4D38201AED0F1CBEDBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A518949621BF6A406D647A3E /* Pods_Habit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,9 +675,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C5A479B261F9F1E0064A309 /* Build configuration list for PBXNativeTarget "Habit" */;
 			buildPhases = (
+				DE56B43A3176CAF900395056 /* [CP] Check Pods Manifest.lock */,
 				9C5A4788261F9F1B0064A309 /* Sources */,
 				9C5A4789261F9F1B0064A309 /* Frameworks */,
 				9C5A478A261F9F1B0064A309 /* Resources */,
+				0E6088F77C57ACF7CA920373 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -647,6 +734,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E6088F77C57ACF7CA920373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit/Pods-Habit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit/Pods-Habit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Habit/Pods-Habit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE56B43A3176CAF900395056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Habit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C5A4788261F9F1B0064A309 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -663,9 +792,11 @@
 				9C7ED9CD269775470026A987 /* ProfileResponse.swift in Sources */,
 				9C5A47A7261FA0580064A309 /* SplashUIState.swift in Sources */,
 				9C393B902661733300C31FDC /* SignUpRemoteDataSource.swift in Sources */,
+				9CE4766E26A089CF00E99B80 /* HabitValueResponse.swift in Sources */,
 				9CBFDE622680E42300C8F9B2 /* HabitDetailViewModel.swift in Sources */,
 				9C591D61265D783B0020D110 /* SignInRemoteDataSource.swift in Sources */,
 				9C7B766226443FF6009E0ECE /* HomeViewModel.swift in Sources */,
+				9CE4767526A08B4D00E99B80 /* ChartUIState.swift in Sources */,
 				9C8FCACD2684B3F500F155C3 /* HabitDetailInteractor.swift in Sources */,
 				9C634D962694E6DE005B15BF /* ProfileViewModel.swift in Sources */,
 				9C5A4790261F9F1B0064A309 /* HabitApp.swift in Sources */,
@@ -680,6 +811,7 @@
 				9C97E67E2645BAEF00B1B35F /* SignUpViewRouter.swift in Sources */,
 				9CB7A10A2640A772001C597D /* SignInViewModel.swift in Sources */,
 				9C7B7668264442C1009E0ECE /* SignUpView.swift in Sources */,
+				9CE4767326A08B0200E99B80 /* ChartInteractor.swift in Sources */,
 				9C7B766026443FEA009E0ECE /* HomeView.swift in Sources */,
 				9C7ED9D42697766A0026A987 /* ProfileUIState.swift in Sources */,
 				9C156D4C264EEEA6009F2D79 /* WebService.swift in Sources */,
@@ -703,11 +835,15 @@
 				9C7ECE2F2671082C00B3A106 /* HabitViewModel.swift in Sources */,
 				9C7ECE2D2671081300B3A106 /* HabitView.swift in Sources */,
 				9CC4E7AC2628A5DF00FD1598 /* SplashViewModel.swift in Sources */,
+				9CC24510269F2826006F862C /* BoxChartView.swift in Sources */,
 				9C5AFA9D266813AC00B2F43B /* RefreshRequest.swift in Sources */,
 				9CE0D93F2641F31000E56C2C /* SignInUIState.swift in Sources */,
+				9CA0FF07269CC4A800C2AC92 /* ChartView.swift in Sources */,
 				9C393B8E266172C700C31FDC /* SignUpInteractor.swift in Sources */,
 				9CE17F152649D268002B4071 /* CustomTextFieldStyle.swift in Sources */,
+				9CE4767126A08A3000E99B80 /* ChartRemoteDataSource.swift in Sources */,
 				9C7ECE27267107D600B3A106 /* HomeViewRouter.swift in Sources */,
+				9CC2450E269F278A006F862C /* ChartViewModel.swift in Sources */,
 				9CE17F122649CDEF002B4071 /* EditTextView.swift in Sources */,
 				9C660FBC265401A400D0E0EF /* SignUpRequest.swift in Sources */,
 				9CCEEB9526938D4B0065AA44 /* GenderSelectorView.swift in Sources */,
@@ -840,6 +976,7 @@
 		};
 		9C5A479C261F9F1E0064A309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792AB339737D2BD60713CF5D /* Pods-Habit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -861,6 +998,7 @@
 		};
 		9C5A479D261F9F1E0064A309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0588BACC6D9336CC7DAABA /* Pods-Habit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
