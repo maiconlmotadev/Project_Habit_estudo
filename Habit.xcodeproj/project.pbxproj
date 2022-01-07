@@ -80,6 +80,8 @@
 		9CE4767126A08A3000E99B80 /* ChartRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767026A08A3000E99B80 /* ChartRemoteDataSource.swift */; };
 		9CE4767326A08B0200E99B80 /* ChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767226A08B0200E99B80 /* ChartInteractor.swift */; };
 		9CE4767526A08B4D00E99B80 /* ChartUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4767426A08B4D00E99B80 /* ChartUIState.swift */; };
+		9CE4F77D26B1E54D0022BB3E /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4F77C26B1E54D0022BB3E /* Mask.swift */; };
+		9CE4F77F26B1ECDB0022BB3E /* ProfileEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4F77E26B1ECDB0022BB3E /* ProfileEditTextView.swift */; };
 		9CEAEC21268FBA6B001DD463 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEAEC20268FBA6B001DD463 /* ImageView.swift */; };
 		9CF54E8A26AF267D003F3E2B /* HabitCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF54E8926AF267D003F3E2B /* HabitCreateView.swift */; };
 		9CF54E8C26AF26EC003F3E2B /* HabitCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF54E8B26AF26EC003F3E2B /* HabitCreateViewModel.swift */; };
@@ -167,6 +169,8 @@
 		9CE4767026A08A3000E99B80 /* ChartRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartRemoteDataSource.swift; sourceTree = "<group>"; };
 		9CE4767226A08B0200E99B80 /* ChartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInteractor.swift; sourceTree = "<group>"; };
 		9CE4767426A08B4D00E99B80 /* ChartUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIState.swift; sourceTree = "<group>"; };
+		9CE4F77C26B1E54D0022BB3E /* Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
+		9CE4F77E26B1ECDB0022BB3E /* ProfileEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditTextView.swift; sourceTree = "<group>"; };
 		9CEAEC20268FBA6B001DD463 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		9CF54E8926AF267D003F3E2B /* HabitCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCreateView.swift; sourceTree = "<group>"; };
 		9CF54E8B26AF26EC003F3E2B /* HabitCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCreateViewModel.swift; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 		9C95750B2644475B00BFA3D1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9CE4F77B26B1E5430022BB3E /* Util */,
 				9C156D4A264EEE88009F2D79 /* Network */,
 				9C973DAC264B28A200425945 /* Lang */,
 				9CE17F102649CDDD002B4071 /* View */,
@@ -656,6 +661,7 @@
 				9C973DB1264B2A6A00425945 /* LoadingButtonView.swift */,
 				9CEAEC20268FBA6B001DD463 /* ImageView.swift */,
 				9CF54E8F26AF2D64003F3E2B /* ImagePickerView.swift */,
+				9CE4F77E26B1ECDB0022BB3E /* ProfileEditTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +681,14 @@
 				9CE4767226A08B0200E99B80 /* ChartInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9CE4F77B26B1E5430022BB3E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9CE4F77C26B1E54D0022BB3E /* Mask.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		9CF54E8526AF265D003F3E2B /* HabitCreate */ = {
@@ -845,6 +859,7 @@
 				9C591D5F265D763F0020D110 /* SignInInteractor.swift in Sources */,
 				9C7ECE31267108CB00B3A106 /* HabitUIState.swift in Sources */,
 				9CF54E8C26AF26EC003F3E2B /* HabitCreateViewModel.swift in Sources */,
+				9CE4F77D26B1E54D0022BB3E /* Mask.swift in Sources */,
 				9C660FC0265414BE00D0E0EF /* SignUpResponse.swift in Sources */,
 				9C591D63265D7CDE0020D110 /* AppError.swift in Sources */,
 				9C5AFA9F2668151100B2F43B /* SplashRemoteDataSource.swift in Sources */,
@@ -868,6 +883,7 @@
 				9C5AFA942667CA8C00B2F43B /* LocalDataSource.swift in Sources */,
 				9C973DB2264B2A6A00425945 /* LoadingButtonView.swift in Sources */,
 				9C5AFA922667C9CA00B2F43B /* UserAuth.swift in Sources */,
+				9CE4F77F26B1ECDB0022BB3E /* ProfileEditTextView.swift in Sources */,
 				9C35251C2655B35A001E068E /* SignInErrorResponse.swift in Sources */,
 				9C973DB0264B28E100425945 /* String+Extension.swift in Sources */,
 				9C3525182655AC82001E068E /* SignInRequest.swift in Sources */,
