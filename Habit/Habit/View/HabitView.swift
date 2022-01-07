@@ -44,7 +44,7 @@ struct HabitView: View {
                 
               } else if case HabitUIState.fullList(let rows) = viewModel.uiState {
                 
-                LazyVStack {
+                VStack {
                   
                   ForEach(rows) { row in
                     HabitCardView(isChart: viewModel.isCharts,
@@ -123,7 +123,7 @@ extension HabitView {
 
 extension HabitView {
   var addButton: some View {
-    NavigationLink(destination: Text("Tela de adicionar")
+    NavigationLink(destination: viewModel.habitCreateView()
         .frame(maxWidth: .infinity, maxHeight: .infinity)) {
       Label("Criar Hábito", systemImage: "plus.app")
         .modifier(ButtonStyle())
